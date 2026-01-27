@@ -1,0 +1,145 @@
+/* ================================
+   CSS VARIABLES
+================================ */
+:root {
+    --primary-color: #1d3557;
+    --secondary-color: #457b9d;
+    --accent1-color: #f1faee;
+    --accent2-color: #e63946;
+
+    --heading-font: Arial, Helvetica, sans-serif;
+    --body-font: Verdana, Geneva, sans-serif;
+}
+
+/* ================================
+   CSS RESET
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================================
+   GLOBAL STYLES
+================================ */
+body {
+    font-family: var(--body-font);
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
+}
+
+/* Limit width and center content */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* ================================
+   HEADER & NAV
+================================ */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+header img {
+    width: 120px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent2-color);
+}
+
+/* ================================
+   HEADINGS
+================================ */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* ================================
+   CONTENT SPACING
+================================ */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* ================================
+   HERO SECTION
+================================ */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Hero heading overlay */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    opacity: 0.85;
+}
+
+/* Hero article overlay */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 16px;
+    width: 60%;
+}
+
+/* Article image */
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 16px;
+    border: 2px solid var(--primary-color);
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 32px;
+    margin-left: 8px;
+}
