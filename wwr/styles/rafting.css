@@ -3,12 +3,20 @@
 ================================ */
 :root {
     --primary-color: #1d3557;
+    --primary-color-rgb: 29,53,87;
     --secondary-color: #457b9d;
+    --secondary-color-rgb: 69,123,157;
     --accent1-color: #f1faee;
+    --accent1-color-rgb: 241,250,238;
     --accent2-color: #e63946;
+    --accent2-color-rgb: 230,57,70;
+
+    --white: #ffffff;
+    --white-rgb: 255,255,255;
 
     --heading-font: Arial, Helvetica, sans-serif;
     --body-font: Verdana, Geneva, sans-serif;
+    --shadow-rgb: 0,0,0;
 }
 
 /* ================================
@@ -59,7 +67,7 @@ nav {
 nav a {
     margin: 0 10px;
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
     font-weight: bold;
     padding: 8px 12px;
     display: block;
@@ -74,7 +82,7 @@ main img {
     height: 200px;
     border: 3px solid var(--primary-color);
     padding: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(var(--shadow-rgb), 0.2);
 }
 
 /* ================================
@@ -125,9 +133,8 @@ p {
     width: 100%;
     text-align: center;
     padding: 16px;
-    background-color: var(--secondary-color);
-    color: #fff;
-    opacity: 0.85;
+    background-color: rgba(var(--secondary-color-rgb), 0.85);
+    color: var(--white);
 }
 
 /* Hero article overlay */
@@ -135,7 +142,7 @@ p {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(var(--accent1-color-rgb), 0.85);
     padding: 16px;
     width: 60%;
 }
