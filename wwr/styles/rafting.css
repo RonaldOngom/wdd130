@@ -3,16 +3,13 @@
 ================================ */
 :root {
     --primary-color: #1d3557;
-    --primary-color-rgb: 29,53,87;
     --secondary-color: #457b9d;
     --secondary-color-rgb: 69,123,157;
     --accent1-color: #f1faee;
     --accent1-color-rgb: 241,250,238;
     --accent2-color: #e63946;
-    --accent2-color-rgb: 230,57,70;
 
     --white: #ffffff;
-    --white-rgb: 255,255,255;
 
     --heading-font: Arial, Helvetica, sans-serif;
     --body-font: Verdana, Geneva, sans-serif;
