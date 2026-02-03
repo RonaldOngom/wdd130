@@ -61,45 +61,39 @@
         <!-- ADVENTURE SECTION -->
         <section>
             <h2>Adventure Awaits You!</h2>
-            <!-- Images will be added in future assignments -->
+            <form action="#" method="post">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <fieldset>
+                    <legend>Trip Interest</legend>
+                    <label>
+                        <input type="radio" id="beginner" name="trip" value="beginner" required>
+                        Beginner Trip
+                    </label>
+                    <label>
+                        <input type="radio" id="intermediate" name="trip" value="intermediate">
+                        Intermediate Trip
+                    </label>
+                    <label>
+                        <input type="radio" id="advanced" name="trip" value="advanced">
+                        Advanced Trip
+                    </label>
+                </fieldset>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label class="checkbox">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    I'd like to receive updates about upcoming trips
+                </label>
+
+                <button type="submit">Send Inquiry</button>
+            </form>
         </section>
 
     </main>
-
-    <!-- CONTACT FORM -->
-    <section class="contact-form">
-        <h2>Get In Touch</h2>
-        <form action="#" method="post">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required>
-
-            <fieldset>
-                <legend>Trip Interest</legend>
-                <label>
-                    <input type="radio" id="beginner" name="trip" value="beginner" required>
-                    Beginner Trip
-                </label>
-                <label>
-                    <input type="radio" id="intermediate" name="trip" value="intermediate">
-                    Intermediate Trip
-                </label>
-                <label>
-                    <input type="radio" id="advanced" name="trip" value="advanced">
-                    Advanced Trip
-                </label>
-            </fieldset>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <label class="checkbox">
-                <input type="checkbox" id="subscribe" name="subscribe">
-                I'd like to receive updates about upcoming trips
-            </label>
-
-            <button type="submit">Send Inquiry</button>
-        </form>
-    </section>
 
     <footer>
         <p>
