@@ -28,105 +28,63 @@
     </header>
 
     <main>
-
-        <!-- HERO SECTION -->
-        <div class="hero">
-            <img src="images/employee2.svg" alt="Lead rafting guide wearing safety helmet and life jacket">
-
-
-            <h1>White Water Rafting Adventures</h1>
-
-            <article>
-                <img src="images/employee1.svg" alt="Happy rafting guide">
-
-                <p>
-                    At White Water Rafting Adventures, our purpose is to connect people
-                    with nature through thrilling, safe, and unforgettable river
-                    experiences. Our expert guides, premium equipment, and love for the
-                    outdoors ensure every trip becomes a lifelong memory.
-                </p>
-            </article>
-        </div>
-
-        <!-- HISTORY SECTION -->
-        <section>
-            <h2>History</h2>
+    <div class="hero">
+        <img src="images/employee2.svg" alt="Lead rafting guide wearing safety helmet and life jacket">
+        <h1>White Water Rafting Adventures</h1>
+        <article>
+            <img src="images/employee1.svg" alt="Happy rafting guide">
             <p>
-                Founded in 2008, White Water Rafting Adventures began as a small group of
-                river enthusiasts dedicated to sharing their passion for adventure.
-                Over the years, we have grown into a trusted rafting company known for
-                safety, excitement, and exceptional customer service.
+                At White Water Rafting Adventures, our purpose is to connect people
+                with nature through thrilling, safe, and unforgettable river
+                experiences.
             </p>
-        </section>
+        </article>
+    </div>
 
-        <!-- ADVENTURE SECTION -->
-        <section>
-            <h2>Adventure Awaits You!</h2>
+    <section>
+        <h2>History</h2>
+        <p>Founded in 2008...</p>
+    </section>
 
-            <div class="gallery">
-                <figure>
-                    <img src="images/employee1.svg" alt="Happy rafting guide">
-                    <figcaption>Happy Rafting Guide</figcaption>
-                </figure>
+    <section>
+        <h2>Adventure Awaits You!</h2>
 
-                <figure>
-  <img src="images/employee2.svg" alt="Lead rafting guide wearing safety helmet and life jacket">
-  <figcaption>Lead Rafting Guide</figcaption>
-</figure>
-
-
-                <figure>
-                    <img src="images/employee3.svg" alt="Customer relations officer">
-                    <figcaption>Customer Relations Officer</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/operations-manager.jpg" alt="Operations manager">
-                    <figcaption>Operations Manager</figcaption>
-                </figure>
-
-
-
-                <figure>
-                    <img src="images/customer-relations.jpeg" alt="Customer relations officer">
-
-                    <figcaption>Customer Relations</figcaption>
-                </figure>
+        <div class="gallery">
             </div>
 
-            <form action="#" method="post">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required>
+        <form action="#" method="post">
+            <div class="form-item">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
 
-                <fieldset>
-                    <legend>Trip Interest</legend>
-                    <label>
-                        <input type="radio" id="beginner" name="trip" value="beginner" required>
-                        Beginner Trip
-                    </label>
-                    <label>
-                        <input type="radio" id="intermediate" name="trip" value="intermediate">
-                        Intermediate Trip
-                    </label>
-                    <label>
-                        <input type="radio" id="advanced" name="trip" value="advanced">
-                        Advanced Trip
-                    </label>
-                </fieldset>
+            <fieldset>
+                <legend>Select Your Adventure Level:</legend>
+                
+                <input type="radio" id="beginner" name="trip-level" value="beginner">
+                <label for="beginner">Beginner</label>
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <input type="radio" id="intermediate" name="trip-level" value="intermediate">
+                <label for="intermediate">Intermediate</label>
 
-                <label class="checkbox">
-                    <input type="checkbox" id="subscribe" name="subscribe">
-                    I'd like to receive updates about upcoming trips
-                </label>
+                <input type="radio" id="advanced" name="trip-level" value="advanced">
+                <label for="advanced">Advanced</label>
+            </fieldset>
 
-                <button type="submit">Send Inquiry</button>
-            </form>
+            <div class="form-item">
+                <label for="message">Special Requirements:</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+
+            <div class="form-item">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Email me about future rafting deals</label>
+            </div>
+
+            <button type="submit">Book My Adventure</button>
+        </form>
         </section>
-
-    </main>
+</main>
 
     <footer>
         <p>
