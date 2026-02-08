@@ -157,39 +157,45 @@ safety, excitement, and exceptional customer service.
 
 
 <form action="#" method="post">
-<label for="name">Full Name</label>
-<input type="text" id="name" name="name" required>
 
-<fieldset>
-<legend>Trip Interest</legend>
-<label>
-<input type="radio" id="beginner" name="trip" value="beginner" required>
-Beginner Trip
-</label>
-<label>
-<input type="radio" id="intermediate" name="trip" value="intermediate">
-Intermediate Trip
-</label>
-<label>
-<input type="radio" id="advanced" name="trip" value="advanced">
-Advanced Trip
-</label>
-</fieldset>
+        <!-- TEXT INPUT -->
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required>
 
-<label for="message">Message</label>
-<textarea id="message" name="message" rows="5" required></textarea>
+        <!-- RADIO BUTTONS (EXACTLY 3, SAME NAME) -->
+        <fieldset>
+            <legend>Trip Interest</legend>
 
-<label class="checkbox">
-<input type="checkbox" id="subscribe" name="subscribe">
-I'd like to receive updates about upcoming trips
-</label>
+            <label for="beginner">
+                <input type="radio" id="beginner" name="trip" value="beginner" required>
+                Beginner Trip
+            </label>
 
-<button type="submit">Send Inquiry</button>
-</form>
-<section>
-    <h2>History</h2>
-    <p>Our story...</p>
-</section>
+            <label for="intermediate">
+                <input type="radio" id="intermediate" name="trip" value="intermediate">
+                Intermediate Trip
+            </label>
+
+            <label for="advanced">
+                <input type="radio" id="advanced" name="trip" value="advanced">
+                Advanced Trip
+            </label>
+        </fieldset>
+
+        <!-- TEXTAREA -->
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <!-- CHECKBOX -->
+        <label for="subscribe">
+            <input type="checkbox" id="subscribe" name="subscribe">
+            Receive trip updates
+        </label>
+
+        <!-- SUBMIT BUTTON -->
+        <button type="submit">Send Inquiry</button>
+
+    </form>
 
 </main>
 
