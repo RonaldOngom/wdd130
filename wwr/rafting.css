@@ -1,0 +1,304 @@
+/* ----------------------------------------
+   Base Styles
+---------------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #1a1a1a;
+    background-color: #f0f8ff;
+}
+
+a {
+    text-decoration: none;
+    color: #0077cc;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #004c99;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ----------------------------------------
+   Header
+---------------------------------------- */
+header {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+header img {
+    height: 50px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    margin-left: 1.5rem;
+    font-weight: 500;
+}
+
+/* ----------------------------------------
+   Main Content
+---------------------------------------- */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Hero Section */
+.contact-hero {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 4rem 2rem;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #00bfff 0%, #1e90ff 100%);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.contact-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-hero p {
+    font-size: 1.2rem;
+    color: #f0f8ff;
+}
+
+/* Company Info */
+.company-info {
+    background-color: #e0f7fa;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.company-info h2 {
+    margin-bottom: 1rem;
+    color: #0077cc;
+}
+
+.company-info p {
+    margin-bottom: 0.5rem;
+}
+
+.company-info iframe {
+    margin-top: 1rem;
+    border: 0;
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.contact-form h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #0077cc;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #00bfff;
+    outline: none;
+}
+
+.contact-form fieldset {
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.contact-form legend {
+    font-weight: 600;
+    color: #0077cc;
+}
+
+.contact-form input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.contact-form .checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.contact-form .checkbox input {
+    margin-right: 0.5rem;
+}
+
+.contact-form button[type="submit"] {
+    margin-top: 1.5rem;
+    padding: 0.9rem 1.5rem;
+    border: none;
+    background-color: #00bfff;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #0077cc;
+    transform: scale(1.05);
+}
+
+/* Employees Section */
+.employees {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.employees h2 {
+    margin-bottom: 1.5rem;
+    color: #0077cc;
+}
+
+.employees figure {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+    width: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.employees figure:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.employees figcaption {
+    margin-top: 0.5rem;
+    font-weight: 500;
+    color: #333;
+    padding: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+footer .socialmedia {
+    margin-top: 1rem;
+}
+
+footer .socialmedia a {
+    margin: 0 0.5rem;
+    transition: transform 0.2s ease;
+}
+
+footer .socialmedia a:hover {
+    transform: scale(1.2);
+}
+
+/* ----------------------------------------
+   Responsive Styles
+---------------------------------------- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav {
+        margin-top: 0.5rem;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav a {
+        margin: 0.3rem 0;
+    }
+
+    .employees figure {
+        width: 100%;
+        max-width: 300px;
+        margin: 1rem auto;
+    }
+
+    .company-info iframe {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-hero h1 {
+        font-size: 2rem;
+    }
+
+    .contact-form button[type="submit"] {
+        font-size: 1rem;
+    }
+}
