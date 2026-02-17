@@ -10,129 +10,123 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <header class="site-header">
-  <div class="header-grid">
-    <a href="index.html" class="logo-link">
-      <img src="images/logo.svg" alt="White Water Rafting Logo" class="logo">
-    </a>
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="trips.html">Trips</a>
-      <a href="contact.html" class="active">Contact Us</a>
-    </nav>
-  </div>
-</header>
+        <div class="header-grid">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.svg" alt="White Water Rafting Logo" class="logo">
+            </a>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html" class="active">Contact Us</a>
+            </nav>
+        </div>
+    </header>
 
-
-
+    <!-- MAIN CONTENT -->
     <main>
-    <!-- Hero Section -->
-    <section class="contact-hero">
-    <h1>Contact Us</h1>
-    <p>We’d love to hear from you. Reach out with questions, reservations, or suggestions.</p>
-</section>
+        <!-- HERO SECTION -->
+        <section class="contact-hero">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you. Reach out with questions, reservations, or suggestions.</p>
+        </section>
 
+        <!-- COMPANY INFO SECTION -->
+        <section class="company-info">
+            <h2>Company Information</h2>
+            <p><strong>Address:</strong> Plot 21 River Road, Jinja, Uganda</p>
+            <p><strong>Phone:</strong> +256 700 123 456</p>
+            <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+        </section>
 
-    <!-- Company Info Section -->
-    <section class="company-info">
-    <h2>Company Information</h2>
-    <p><strong>Address:</strong> Plot 21 River Road, Jinja, Uganda</p>
-    <p><strong>Phone:</strong> +256 700 123 456</p>
-    <p><strong>Email:</strong> info@whitewaterrafting.com</p>
-</section>
+        <!-- GOOGLE MAP SECTION -->
+        <section class="map">
+            <h2>Our Location</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.45671537582!2d32.581111!3d0.347596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbbdbbbbbb!2sKampala!5e0!3m2!1sen!2sug!4v1700000000000"
+                width="600"
+                height="350"
+                class="map-iframe"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
 
+        <!-- CONTACT FORM SECTION -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <!-- TEXT INPUT -->
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
 
-    <!-- Google Map Section (MUST be its own section) -->
-    <section class="map">
-    <h2>Our Location</h2>
-    <iframe
-    src="https://www.google.com/maps/embed?pb=..."
-    width="600"
-    height="350"
-    class="map-iframe"
-    allowfullscreen
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+                <!-- RADIO BUTTONS -->
+                <fieldset>
+                    <legend>Purpose of Message</legend>
+                    <label for="general">
+                        <input type="radio" id="general" name="purpose" value="general" required>
+                        General Inquiry
+                    </label>
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+                    <label for="feedback">
+                        <input type="radio" id="feedback" name="purpose" value="feedback">
+                        Website Feedback
+                    </label>
+                </fieldset>
 
-</section>
+                <!-- TEXTAREA -->
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
 
-    <!-- Contact Form Section -->
-    <section class="contact-form">
-    <h2>Send Us a Message</h2>
-    <form action="#" method="post">
-        <!-- Text input -->
-        <label for="fullname">Full Name</label>
-        <input type="text" id="fullname" name="fullname" required>
+                <!-- CHECKBOX -->
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    Subscribe to monthly updates
+                </label>
 
-        <!-- Radio buttons -->
-        <fieldset>
-            <legend>Purpose of Message</legend>
-            <label for="general">
-                <input type="radio" id="general" name="purpose" value="general" required>
-                General Inquiry
-            </label>
-            <label for="reservation">
-                <input type="radio" id="reservation" name="purpose" value="reservation">
-                Reservation Question
-            </label>
-            <label for="feedback">
-                <input type="radio" id="feedback" name="purpose" value="feedback">
-                Website Feedback
-            </label>
-        </fieldset>
+                <!-- SUBMIT BUTTON -->
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
 
-        <!-- Textarea -->
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+        <!-- EMPLOYEES SECTION -->
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <figure>
+                <img src="images/employee1.svg" alt="Operations Manager">
+                <figcaption>Sarah Kintu – Operations Manager</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.svg" alt="Lead Rafting Guide">
+                <figcaption>Daniel Okello – Lead Rafting Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.svg" alt="Customer Relations Officer">
+                <figcaption>Mary Namubiru – Customer Relations Officer</figcaption>
+            </figure>
+        </section>
+    </main>
 
-        <!-- Checkbox -->
-        <label for="subscribe">
-            <input type="checkbox" id="subscribe" name="subscribe">
-            Subscribe to monthly updates
-        </label>
-
-        <!-- Submit button -->
-        <button type="submit">Send Message</button>
-    </form>
-</section>
-
-    <!-- Employees Section -->
-    <section class="employees">
-    <h2>Meet Our Team</h2>
-    <figure>
-        <img src="images/employee1.svg" alt="Operations Manager">
-        <figcaption>Sarah Kintu – Operations Manager</figcaption>
-    </figure>
-    <figure>
-        <img src="images/employee2.svg" alt="Lead Rafting Guide">
-        <figcaption>Daniel Okello – Lead Rafting Guide</figcaption>
-    </figure>
-    <figure>
-        <img src="images/employee3.svg" alt="Customer Relations Officer">
-        <figcaption>Mary Namubiru – Customer Relations Officer</figcaption>
-    </figure>
-</section>
-
-</main>
-
+    <!-- FOOTER -->
     <footer class="site-footer">
-    <p>© 2026 White Water Rafting Adventures | Ongom Ronald</p>
-    <nav class="socialmedia">
-        <a href="https://facebook.com">
-            <img src="images/facebook.svg" alt="Visit White Water Rafting on Facebook">
-        </a>
-        <a href="https://twitter.com">
-            <img src="images/twitter.svg" alt="Follow White Water Rafting on Twitter">
-        </a>
-        <a href="https://instagram.com">
-            <img src="images/instagram.svg" alt="Follow White Water Rafting on Instagram">
-        </a>
-    </nav>
-</footer>
-
-
-
+        <p>© 2026 White Water Rafting Adventures | Ongom Ronald</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Visit White Water Rafting on Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.svg" alt="Follow White Water Rafting on Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Follow White Water Rafting on Instagram">
+            </a>
+        </nav>
+    </footer>
 </body>
 </html>
