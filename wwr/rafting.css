@@ -286,3 +286,15 @@ section {
         gap: 12px;
     }
 }
+.team {
+  display: flex;
+  gap: 2rem;
+  text-align: center;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
