@@ -11,14 +11,14 @@
 
 <body>
     <!-- HEADER -->
-    <header>
-        <div class="header-container">
-            <a href="index.html">
-                <img src="images/logo.svg" alt="White Water Rafting Logo">
+    <header class="site-header">
+        <div class="header-grid">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.svg" alt="White Water Rafting Logo" class="logo">
             </a>
-            <nav>
+            <nav class="main-nav">
                 <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
+                <a href="about.html" class="active">About Us</a>
                 <a href="trips.html">Trips</a>
                 <a href="contact.html">Contact Us</a>
             </nav>
@@ -28,15 +28,10 @@
     <!-- MAIN CONTENT -->
     <main>
         <!-- HERO SECTION -->
-        <div class="hero">
-            <figure>
-                <img src="images/employee2.svg" alt="Lead rafting guide wearing safety helmet and life jacket" width="150" height="150">
-                <figcaption>Lead Rafting Guide – Beginner Trip</figcaption>
-            </figure>
-
+        <section class="hero">
+            <img src="images/river-hero.jpg" alt="Rafting adventure on wild river" class="hero-img">
             <h1>White Water Rafting Adventures</h1>
-
-            <article>
+            <article class="hero-article">
                 <figure>
                     <img src="images/employee1.svg" alt="Happy rafting guide leading beginners">
                     <figcaption>Operations Manager</figcaption>
@@ -44,58 +39,51 @@
                 <h2>Meet Our Guide</h2>
                 <p>Our Operations Manager leads the rafting team, ensuring safety and fun for all adventurers.</p>
             </article>
+        </section>
 
+        <!-- HISTORY SECTION -->
+        <section class="history">
+            <h2>Our History</h2>
             <p>
-                At White Water Rafting Adventures, our purpose is to connect people
-                with nature through thrilling, safe, and unforgettable river
-                experiences. Our expert guides, premium equipment, and love for the
-                outdoors ensure every trip becomes a lifelong memory.
-            </p>
-        </div>
-
-        <!-- SECTION 1: HISTORY -->
-        <section>
-            <h2>History</h2>
-            <p>
-                Founded in 2008, White Water Rafting Adventures began as a small group of
-                river enthusiasts dedicated to sharing their passion for adventure.
-                Over the years, we have grown into a trusted rafting company known for
-                safety, excitement, and exceptional customer service.
+                Founded in 2008, White Water Rafting Adventures began as a small group of river enthusiasts
+                dedicated to sharing their passion for adventure. Over the years, we have grown into a trusted
+                rafting company known for safety, excitement, and exceptional customer service.
             </p>
         </section>
 
-        <!-- SECTION 2: ADVENTURE + CONTACT FORM COMBINED -->
-        <section>
+        <!-- ADVENTURES SECTION -->
+        <section class="adventures">
             <h2>Adventure Awaits You!</h2>
-
-            <div class="employee-cards">
+            <div class="adventure-gallery">
                 <figure>
-                    <img src="images/employee1.svg" alt="Happy rafting guide leading beginners" width="150" height="150">
-                    <figcaption>Rafting Guide – Beginner Group</figcaption>
+                    <img src="images/los-dientes.jpg" alt="Los Dientes del Diablo rapids">
+                    <figcaption>Los Dientes del Diablo</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/employee2.svg" alt="Lead rafting guide wearing safety helmet and life jacket guiding beginners" width="150" height="150">
-                    <figcaption>Lead Rafting Guide – Beginner Trip</figcaption>
+                    <img src="images/big-mallard.jpg" alt="Big Mallard rapids">
+                    <figcaption>Big Mallard</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/employee2-alt.svg" alt="Lead rafting guide demonstrating paddling techniques to group" width="150" height="150">
-                    <figcaption>Lead Rafting Guide – Training Session</figcaption>
+                    <img src="images/half-day.jpg" alt="Half Day Adventure rafting">
+                    <figcaption>Half Day Adventure</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/employee3.svg" alt="Customer relations officer assisting guests at riverbank" width="150" height="150">
-                    <figcaption>Customer Relations Officer</figcaption>
+                    <img src="images/rapid-wave.jpg" alt="Rapid Wave adventure">
+                    <figcaption>Rapid Wave</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/operations-manager.jpg" alt="Operations Manager guiding rafting team down rapids" width="150" height="150">
-                    <figcaption>Operations Manager</figcaption>
+                    <img src="images/adrenaline-rush.jpg" alt="Adrenaline Rush rafting trip">
+                    <figcaption>Adrenaline Rush</figcaption>
                 </figure>
             </div>
+        </section>
 
-            <!-- CONTACT FORM -->
+        <!-- CONTACT FORM SECTION -->
+        <section class="contact-form">
             <h2>Contact Our Team</h2>
             <form action="#" method="post">
                 <label for="fullname">Full Name</label>
@@ -134,7 +122,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="site-footer">
         <p>© 2026 White Water Rafting Adventures | Ongom Ronald</p>
         <nav class="socialmedia">
             <a href="https://facebook.com">
