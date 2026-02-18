@@ -1,0 +1,34 @@
+Week 7 Project Report
+Student Name: Ongom Ronald
+Course: CSE 111
+
+Time Spent (50%)
+I spent approximately 12 hours this week completing my Week 7 project. Time was spent on:
+    • Finalizing program functions
+    • Adding the add_sale function and updating existing functions
+    • Writing and verifying pytest tests
+    • Debugging import errors and file path issues
+    • Creating a sample CSV file for sales data
+
+Organization (30%)
+My program is organized into multiple functions, each performing a single task:
+    • load_sales_data: Reads CSV sales data
+    • add_sale: Adds or updates a sale record
+    • calculate_subtotal: Computes subtotal of all sales
+    • apply_discount: Applies discount logic (none or BOGO)
+    • calculate_tax: Computes tax based on subtotal
+    • sales_analytics: Prints analytics for total sales and top items
+    • generate_receipt: Prints a formatted receipt
+Each function is independent, reusable, and testable with pytest.
+
+Progress (20%)
+Significant progress has been completed this week:
+    • Implemented add_sale and updated all supporting functions
+    • Integrated CSV sales data processing
+    • Implemented discounts (BOGO and no discount)
+    • Implemented receipt generation
+    • Implemented sales analytics output
+    • Created pytest tests for all functions
+    • Debugged all import and runtime errors
+    • Verified all tests pass successfully
+The program now runs correctly without errors and meets all assignment requirements.
