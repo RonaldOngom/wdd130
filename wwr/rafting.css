@@ -29,12 +29,12 @@
    GLOBAL STYLES
 ================================ */
 body {
-    font-family: var(--body-font);
-    color: var(--primary-color);
-    background-color: var(--accent1-color);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
     line-height: 1.6;
+    color: #333;
 }
-
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -80,96 +80,85 @@ p {
 ================================ */
 .hero {
     position: relative;
-    margin-bottom: 32px;
+    text-align: center;
 }
 
-.hero-img {
+.hero img {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 .hero h1 {
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--secondary-overlay);
-    color: var(--white-color);
-    padding: 16px 24px;
-    text-align: center;
-    font-size: 2rem;
-    border-radius: 6px;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
 }
 
-.hero-article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: var(--accent-overlay);
-    padding: 16px;
-    width: 300px;
-    border-radius: 6px;
-    box-shadow: 0 4px 8px var(--shadow-color);
+.hero article {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.5rem;
+    align-items: center;
 }
 
-.hero-article figure {
-    margin-bottom: 8px;
-}
-
-.hero-article img {
+.hero article img {
     width: 100%;
-    border: 2px solid var(--primary-color);
-    border-radius: 4px;
+    border-radius: 5px;
 }
-
 /* ================================
    SECTIONS
 ================================ */
-section {
-    max-width: 960px;
-    margin: 0 auto 32px auto;
-    padding: 0 16px;
-}
-
 .history {
-    background-color: var(--white-color);
-    padding: 24px;
-    border-radius: 6px;
-    box-shadow: 0 2px 6px var(--shadow-color);
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
 }
 
+.history h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.history p {
+    text-align: justify;
+}
 /* ================================
    ADVENTURES GALLERY
 ================================ */
-.adventure-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: space-between;
-}
-
-.adventure-gallery figure {
-    flex: 1 1 calc(20% - 16px);
-    background-color: var(--white-color);
-    padding: 8px;
-    border-radius: 6px;
+.adventures {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
     text-align: center;
-    box-shadow: 0 2px 6px var(--shadow-color);
 }
 
-.adventure-gallery img {
+.adventures h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 1rem;
+}
+
+.adventures figure {
+    margin: 0;
+}
+
+.adventures img {
     width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 8px;
+    border-radius: 5px;
 }
 
-.adventure-gallery figcaption {
+.adventures figcaption {
+    margin-top: 0.5rem;
     font-weight: bold;
-    color: var(--primary-color);
 }
-
 /* ================================
    CONTACT FORM
 ================================ */
@@ -286,4 +275,30 @@ section {
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
+}
+.site-footer {
+    background-color: #1e6091;
+    color: #ffffff;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+}
+
+.socialmedia a:hover img {
+    transform: scale(1.1);
 }
