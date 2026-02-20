@@ -48,44 +48,33 @@ p {
    HEADER
 ================================ */
 .site-header {
-    background-color: var(--white-color);
-    box-shadow: 0 2px 4px var(--shadow-color);
-}
-
-.header-grid {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 16px;
+    padding: 1rem 2rem;
+    background-color: #1e6091;
 }
 
 .logo {
-    width: 120px;
+    max-width: 120px;
 }
 
 .main-nav {
     display: flex;
     justify-content: flex-end;
-    gap: 16px;
+    gap: 1.5rem;
 }
 
 .main-nav a {
+    color: #ffffff;
     text-decoration: none;
-    color: var(--primary-color);
     font-weight: bold;
-    padding: 8px 12px;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 .main-nav a:hover,
 .main-nav a.active {
-    background-color: var(--secondary-color);
-    color: var(--white-color);
-    border-radius: 4px;
+    text-decoration: underline;
 }
-
 /* ================================
    HERO SECTION
 ================================ */
