@@ -9,6 +9,7 @@ class Program
         string firstName = Console.ReadLine();
 
         // Prompt the user for the last name
+        
         Console.Write("What is your last name? ");
         string lastName = Console.ReadLine();
 

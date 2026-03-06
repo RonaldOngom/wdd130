@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("wdd130")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c143c73816e24f48c861611bd8c45439825b8c4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a450b98cb23abd5983953763200ea109118bd32f")]
 [assembly: System.Reflection.AssemblyProductAttribute("wdd130")]
 [assembly: System.Reflection.AssemblyTitleAttribute("wdd130")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
