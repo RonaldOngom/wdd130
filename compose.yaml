@@ -1,0 +1,6 @@
+services:
+  wdd130:
+    image: wdd130
+    build:
+      context: .
+      dockerfile: ./Dockerfile
