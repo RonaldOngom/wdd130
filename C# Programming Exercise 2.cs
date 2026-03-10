@@ -10,7 +10,7 @@ class Program
         int percentage = int.Parse(userInput);
 
         // Determine the letter grade
-        string letter = "";
+        string letter;
 
         if (percentage >= 90)
         {
@@ -33,41 +33,33 @@ class Program
             letter = "F";
         }
 
-        // Determine the grade sign (+ or -)
-        int lastDigit = percentage % 10;
+        // Determine the + or - sign
         string sign = "";
+        int lastDigit = percentage % 10;
 
-        if (lastDigit >= 7)
+        if (letter != "A" && letter != "F")
         {
-            sign = "+";
-        }
-        else if (lastDigit < 3)
-        {
-            sign = "-";
-        }
-
-        // Handle special cases
-        if (letter == "A" && sign == "+")
-        {
-            sign = "";
+            if (lastDigit >= 7)
+            {
+                sign = "+";
+            }
+            else if (lastDigit < 3)
+            {
+                sign = "-";
+            }
         }
 
-        if (letter == "F")
-        {
-            sign = "";
-        }
+        // Print the final letter grade
+        Console.WriteLine($"Your letter grade is {letter}{sign}.");
 
-        // Display the grade
-        Console.WriteLine($"Your grade is {letter}{sign}.");
-
-        // Determine if the student passed
+        // Determine pass or fail
         if (percentage >= 70)
         {
             Console.WriteLine("Congratulations! You passed the course.");
         }
         else
         {
-            Console.WriteLine("Don't give up! Keep trying next time.");
+            Console.WriteLine("Keep trying! You can do better next time.");
         }
     }
 }
