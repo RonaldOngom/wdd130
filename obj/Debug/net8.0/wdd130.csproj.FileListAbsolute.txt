@@ -1,15 +1,5 @@
-/home/shepherd/Desktop/Wdd130/wdd130/bin/Debug/net8.0/wdd130
-/home/shepherd/Desktop/Wdd130/wdd130/bin/Debug/net8.0/wdd130.deps.json
-/home/shepherd/Desktop/Wdd130/wdd130/bin/Debug/net8.0/wdd130.runtimeconfig.json
-/home/shepherd/Desktop/Wdd130/wdd130/bin/Debug/net8.0/wdd130.dll
-/home/shepherd/Desktop/Wdd130/wdd130/bin/Debug/net8.0/wdd130.pdb
 /home/shepherd/Desktop/Wdd130/wdd130/obj/Debug/net8.0/wdd130.GeneratedMSBuildEditorConfig.editorconfig
 /home/shepherd/Desktop/Wdd130/wdd130/obj/Debug/net8.0/wdd130.AssemblyInfoInputs.cache
 /home/shepherd/Desktop/Wdd130/wdd130/obj/Debug/net8.0/wdd130.AssemblyInfo.cs
 /home/shepherd/Desktop/Wdd130/wdd130/obj/Debug/net8.0/wdd130.csproj.CoreCompileInputs.cache
 /home/shepherd/Desktop/Wdd130/wdd130/obj/Debug/net8.0/wdd130.sourcelink.json
-/home/shepherd/Desktop/Wdd130/wdd130/obj/Debug/net8.0/wdd130.dll
-/home/shepherd/Desktop/Wdd130/wdd130/obj/Debug/net8.0/refint/wdd130.dll
-/home/shepherd/Desktop/Wdd130/wdd130/obj/Debug/net8.0/wdd130.pdb
-/home/shepherd/Desktop/Wdd130/wdd130/obj/Debug/net8.0/wdd130.genruntimeconfig.cache
-/home/shepherd/Desktop/Wdd130/wdd130/obj/Debug/net8.0/ref/wdd130.dll
